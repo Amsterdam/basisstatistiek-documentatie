@@ -1,0 +1,59 @@
+digraph G {
+    rankdir="LR";
+    compound=true;
+
+	subgraph cluster_6 {
+		style="dashed"
+		datasetA [label="dataset"];
+		datasetB [label="dataset"];
+
+		subgraph cluster_0 {
+			style="solid"
+			bronnenA [label="bronnen"]
+			label = "leverancier";
+		}
+
+		subgraph cluster_1 {
+		        style="solid"
+
+			subgraph cluster_2 {
+				bronnenB [label="bronnen"];
+				datamodelA [label="datamodel"];
+				extractieA [label="extractie"];
+
+				bronnenB -> datamodelA -> extractieA
+				label="schema"
+			}
+			label="database jaar X"
+		}
+
+		subgraph cluster_3 {
+		        style="solid"
+
+			subgraph cluster_4 {
+				datamodelB [label="tabel"];
+				extractieB [label="extractie"];
+				datamodelB -> extractieB;
+				label="schema\n[database jaar X]"
+			}
+			label="database jaar X"
+		}
+
+		bronnenA -> bronnenB
+		datamodelA -> datamodelB
+		extractieA -> datasetA
+		extractieB -> datasetB
+
+		subgraph cluster_5 {
+		        style="solid"
+			development -> staging[style="dashed"]
+			staging -> master[style="dashed"]
+
+			label="git"
+		}
+
+		master ->  datamodelA [lhead=cluster_1];
+		label="log"
+	}
+}
+
