@@ -48,6 +48,8 @@ Definities
    Een stukdeel is een (zelfstandig te onderkennen) deel van een stuk, op grond waarvan gegevens in de kadastrale registratie ontstaan, wijzigen, vervallen of worden aangevuld. Ingeval in een stuk bijvoorbeeld is vermeld dat er verschillende Rechten betrokken zijn bij verschillende leveringen (tegen verschillende koopsommen) dan worden die fragmenten uit de tekst van die akte als verschillende stukdelen onderkent. Dergelijke stukdelen kunnen in de toekomst afzonderlijk worden aangevuld, doorgehaald, ed.. Een stukdeel komt aak overeen met een rechtsfeit.
 - Transactie
    Een transactie is een gebeurtenis op een bepaald tijdstip en datum betreffende de levering van een onroerende zaak. Bij deze levering gaat het recht van eigendom op een onroerende zaak in zijn geheel over naar een ander rechtspersoon. De transactie wordt vastgelegd in een stukdeel van onderdeel is van een ingeschreven stuk (akte) in de openbare registers van het Kadaster.
+- Kadastraal subject
+   Een kadastraal subject is een natuurlijk persoon (een mens) of een niet-natuurlijk persoon (bedrijf,overheid, vereniging van eigenaren).
 - Briefadresindicatie
    Een door de gemeente tijdelijk (6 mnd) aan een persoon toegekend adres waar deze persoon niet verblijft.
    - Varende bevolking (schippers)
@@ -62,9 +64,9 @@ Definities
    Wanneer de BAG statuscode: 18 (gevormd), 22 (ingetrokken) of 23 (buiten gebruik) is.
 - Verblijfsobject in gebruik
    Wanneer de BAG statuscode: 20 (niet ingemeten) of 21 (ingemeten) is.
-- Geografische afbakening
-   De ruimtelijke afbakening van alle objecten waarover statistiek wordt gemaakt. Alles wat binnen het gebied ligt wordt meegeteld en buiten het gebied niet.
-
-  - Woonplaats (in context van woningvoorraad)
-     Veel statistieken die op dit moment binnen de reikwijdte vallen zijn gerelateerd aan de BAG.
-     Voor een optimale logische consistentie tussen de objecten en de geografische afbakening wordt de Bestuurlijke gemeentegrens opgebouwd uit de aggregatie van gerelateerde woonplaatsen. In dit specifieke geval betreft het de woonplaats Amsterdam.
+- Geografische afbakening Basisstatistiek
+   De Geografische afbakening in de context van Basisstatistiek is de ruimtelijke afbakening van alle objecten waarover statistiek wordt gemaakt.
+   Alles wat binnen het gebied ligt wordt meegeteld en buiten het gebied niet.
+   Voor de afbakening voor Basisstatistiek Amsterdam wordt de Bestuurlijke Gemeente aangehouden.
+   Vanwege de sterke afhankelijkheid met de BAG wordt de geometrie van de bestuurlijke Gemeente opgebouwd uit de aggregatie van de geometrie van alle gerelateerde woonplaatsen.
+  
